@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> <!--link para possibilitar a junção do CSS com esse arquivo HTML-->
+    <title>WikiMoeda</title>
+</head>
+
+<body>
+    <header> <!--tag Semântica "header" (correta de usar)-->
+        <h1>WIKIMOEDA</h1>
+        <nav> <!--tag Semântica "nav" para navegação (correto)-->
+            <a href="#">Cotação</a>
+            <a href="#">Wiki</a>
+            <a href="#">Notícias</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>WIKIMOEDA</h2>
+        <p>Fique atualizado com as últimas cotações sobre diversas moedas, incluindo Real, Dólar e Bitcoin</p>
+    </section>
+
+    <div class="cta "> <!--ou utilizar uma "section" (com Semântica)-->
+        <p>Dólar em disparada: entenda a alta da moeda e o que vem pela frente.</p>
+    </div>
+
+    <section class="lives-rates">
+        <h3>Moedas em tempo real</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Moeda</th>
+                    <th>Preço</th>
+                    <th>Mudança / 24h</th>
+                </tr>
+            </thead>
+            <tbody id="rates-body">
+                <tr>
+                    <td>USD | Dólar americano</td>
+                    <td id="usd-price">-</td>
+                    <td id="usd-change" class="changer"></td>
+                </tr>
+                <tr>
+                    <td>GBP | Líbra</td>
+                    <td id="GBP-price">-</td>
+                    <td id="GBP-change" class="changer"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+<!--Dúvidas: lembrar h1,h2,h3... e anotar as tags de "table", "section", "nav"-->
+
+</html>
